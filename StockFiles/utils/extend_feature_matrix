@@ -1,0 +1,4 @@
+def extend_feature_matrix(X, new_columns):
+    for col_name, col_data in new_columns.items():
+        X[col_name] = col_data
+    return X
