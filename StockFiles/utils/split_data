@@ -1,0 +1,5 @@
+def split_data(X, y):
+    mid_point = len(X) // 2
+    X_train, X_test = X[:mid_point], X[mid_point:]
+    y_train, y_test = y[:mid_point], y[mid_point:]
+    return X_train, X_test, y_train, y_test
